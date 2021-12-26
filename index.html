@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dropdown Navigation</title>
+    <style>
+        /* Google Web Fonts CDN */
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', 'sans-serif';
+            color: #222;
+            line-height: 1.5em;
+        }
+
+        a {
+            color: #222;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            display: inline-block;
+            width: 250px;
+        }
+
+        .dropdown-btn {
+            width: inherit;
+            padding: 10px;
+            font-size: 18px;
+            background-color: yellowgreen;
+            color: #fff;
+            border: none;
+            outline: none; /* Take out the button's nature effect of inner-shadow*/
+            cursor: pointer;
+        }
+
+        .dropdown-submenu {
+            display: none; /* hide submenu */
+            width: inherit;
+            box-shadow: 0 0 10px rgba(176, 240, 116, 0.486);
+        }
+
+        .dropdown-submenu a {
+            display: block; /* makes contents to be vertical by using block */
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* When a user hovers .submenu's elements, background color should change*/
+        .dropdown-submenu a:hover {
+            background-color: #eee;
+        }
+        /* When a user hovers .dropdown class, .dropdown-submenu should be executed*/
+        .dropdown:hover .dropdown-submenu {
+            display: block; /* makes dropdown-submenu's elements to be vertical by using block*/
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="dropdown">
+        <button class="dropdown-btn">Real Estate Type</button>
+        <div class="dropdown-submenu">
+            <a href="#none">All</a>
+            <a href="#none">One bed</a>
+            <a href="#none">1.5 bed</a>
+            <a href="#none">Two bed</a>
+            <a href="#none">Three bed</a>
+            <a href="#none">officetal</a>
+            <a href="#none">Apartment</a>
+        </div>
+    </div>
+
+</body>
+
+</html>
